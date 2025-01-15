@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Transaction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header><h1>Add New Transaction</h1></header>
+    <section>
+        <form method="POST">
+            <input type="number" name="amount" placeholder="Amount" required>
+            <input type="text" name="category" placeholder="Category" required>
+            <input type="text" name="date" placeholder="Date (YYYY-MM-DD)" required>
+            <textarea name="description" placeholder="Description"></textarea>
+            <button type="submit">Add Transaction</button>
+        </form>
+    </section>
+</body>
+</html>
